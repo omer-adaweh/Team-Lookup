@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+.teamInfo {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 200vh;
+}
+
+.team-One,
+.team-Two,
+.full-Time {
+	display: flex;
+	flex-direction: row;
+	gap: 6em;
+	align-items: center;
+}
+
+.full-Time {
+	margin: 0 auto;
+}
+.scoreBoard {
+	height: 100vh;
+}
+
+#scoreTitle {
+	padding-top: 50px;
+	font-size: 40px;
+	color: royalblue;
+	text-align: center;
+}
+
+.date-Event {
+	grid-column: 1 / 2;
+	grid-row: 3 / 3;
+}
+.score-Container {
+	display: grid;
+
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-gap: 1em;
+	grid-auto-rows: 40px;
+	grid-auto-columns: 90px;
+}
+
+.scoreBoard-grid {
+	padding: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3em;
+}
+
+.but-Lights {
+	grid-column: 3 / 4;
+	grid-row: 3 / 3;
+	width: 50%;
+	background-color: transparent;
+}
+.but-Lights a {
+	text-decoration: none;
+	color: black;
+}
+
+.info-header {
+	text-align: center;
+	font-size: 40px;
+	color: burlywood;
+	margin: 0;
+}
+
+.team-info-con {
+	border-radius: 4px;
+	margin: 0 auto;
+	width: 90%;
+	height: 50%;
+	opacity: 0.7;
+	padding: 0;
+}
+
+.team-info-text {
+	font-size: 19px;
+	margin-right: 10%;
+	margin-left: 10%;
+	color: white;
+}
+
+header {
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.7)),
+			to(rgba(0, 0, 0, 0.7))
+		),
+		url(img/soccer-background-image.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(img/soccer-background-image.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.search-box {
+	position: absolute;
+	top: 50%;
+	right: 45%;
+	transition: translate(-50%, -50%);
+	background: #2f3640;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+	opacity: 0.5;
+}
+
+.search-box:hover > .search-txt {
+	width: 240px;
+	padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+	background: white;
+}
+
+.search-btn {
+	color: #e84118;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+
+nav {
+	border: 1px red solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: brown;
+	height: 50px;
+	box-shadow: 0 1px 3px #efefef;
+}
+
+nav h2 {
+	padding-right: 50px;
+	font-weight: 500;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+}
+nav h2 a:hover {
+	border-bottom: 2px solid #e67e22;
+}
+nav h2 a:link,
+nav h2 a:visited {
+	padding: 15px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
