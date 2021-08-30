@@ -33,13 +33,7 @@ export default class Event {
                 array[index] = parseInt(el.idEvent, 10);
             });
            
-            return rest;
-            // res.data.results.forEach(element => {
-            //     console.log(element.idEvent);
-                
-            // });
-    
-           
+            return rest;      
         } catch (error) {
             alert(error);
         }
