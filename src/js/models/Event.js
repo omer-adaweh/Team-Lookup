@@ -32,9 +32,7 @@ export default class Event {
             array = rest.data.results.forEach((el, index) => {
                 array[index] = parseInt(el.idEvent, 10);
             });
-            console.log(rest);
-            console.log(rest.data);
-            console.log(rest.data.results[0].strHomeTeam);
+           
             return rest;
             // res.data.results.forEach(element => {
             //     console.log(element.idEvent);
